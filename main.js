@@ -1,5 +1,3 @@
-// book class: represents a book
-
 class Article {
   constructor(title, published, site, adgroup, bids) {
     this.title = title;
@@ -44,6 +42,13 @@ class UI {
         site: "Sky News",
         adgroup: "Sky News",
         bids: "185"
+      },
+      {
+        title: "McDonalds is entering the fried shicken sandwich wars",
+        published: "2019-10-30",
+        site: "Sky News",
+        adgroup: "Sky News",
+        bids: "1855"
       }
     ];
 
@@ -74,7 +79,7 @@ class UI {
     var parent = document.querySelector("#article-list"),
       items = parent.querySelectorAll("tr"),
       loadMoreBtn = document.querySelector("#load-more-comments"),
-      maxItems = 6,
+      maxItems = 4,
       hiddenClass = "visually-hidden";
 
     [].forEach.call(items, function(item, idx) {
